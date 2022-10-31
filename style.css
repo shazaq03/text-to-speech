@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+    color: beige;
+}
+
+.container{
+    width: 50vw;
+    height: 50vh;
+    background-color: #adadad;
+    border: 2px solid beige;
+    border-radius: 5px;
+}
+
+.container textarea{
+    width: 100%;
+    max-width: 100%;
+    max-height: 50%;
+    overflow: auto;
+    height: 50%;
+    display: block;
+    background-color: #333;
+    color: beige;
+}
+
+.container textarea:active{
+    place-content: "";
+}
+
+.speed-area{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.speed-area label{
+    padding: 1.5rem;
+    color: #333;
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.speed-area input{
+    background-color: #333;
+    color: beige;
+    font-size: 1rem;
+    padding: .5rem 1.5rem;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 3px;
+}
+
+button{
+    padding: .5rem 1.75rem;
+    background-color: #333;
+    color: beige;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-right: 1rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.control-buttons{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
